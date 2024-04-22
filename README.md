@@ -1,0 +1,1 @@
+obs: completion bash - instalar
