@@ -1,1 +1,2 @@
-obs: completion bash - instalar
+atividades:
+  completion bash - instalar
