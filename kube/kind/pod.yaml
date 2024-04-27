@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: giropops
-  name: giropops-2
+    run: meu-nginx
+  name: meu-nginx
 spec:
   containers:
   - image: nginx
