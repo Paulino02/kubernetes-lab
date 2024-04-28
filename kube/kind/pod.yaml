@@ -3,14 +3,14 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: nginx1
-  name: nginx1
+    run: meu-nginx
+  name: meu-nginx
 spec:
   containers:
   - image: nginx
-    name: nginx2
+    name: meu-nginx
     ports:
-    - containerPort: 8080
+    - containerPort: 80
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always

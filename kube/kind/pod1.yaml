@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod  # O tipo deve ser "Pod" (singular), não "pods" (plural)
+metadata:
+  labels:
+    run: nginx-giropops
+    app: giropops-strigus
+  name: nginx-giropops1
+spec:
+  containers:
+  - image: nginx
+    name: nginx-giropops1
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        memory: "4400Mi"  # Corrigi o valor de memória para o formato correto (ex: "4400Mi")
+        cpu: "0.5"  # Corrigi o valor de CPU para o formato correto (ex: "0.5")
+      requests:
+        memory: "4400Mi"  # Corrigi o valor de memória para o formato correto (ex: "4400Mi")
+        cpu: "0.3"  # Corrigi o valor de CPU para o formato correto (ex: "0.3")
+  dnsPolicy: ClusterFirst  # Corrigi o valor para "ClusterFirst"
+  restartPolicy: Always
