@@ -1,2 +1,1 @@
-atividades:
-  completion bash - instalar
+completion bash - instalar
